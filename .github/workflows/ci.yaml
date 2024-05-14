@@ -6,11 +6,6 @@ on:
     - cron: '0 0 * * 1'
 
 jobs:
-  security:
-    uses: chlip2/olcs-backend/.github/workflows/php-security.yml@feature-bl-16691-update-actions-to-node-20
-    secrets:
-      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-
   static-analysis:
     uses: chlip2/olcs-backend/.github/workflows/php-static.yml@feature-bl-16691-update-actions-to-node-20
     with:
